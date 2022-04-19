@@ -9,6 +9,8 @@ function ReduceHook() {
             case "Increase":
                 return { value : state.value + 1 }; // return {} with initial state names ex : {  value : state.value + 1 } state value use for access previous value                
            
+            case "decrease":
+                return { value : state.value - 1 };
             default:
                 console.log("error");
                 // throw new Error();
@@ -28,7 +30,8 @@ function ReduceHook() {
         <h1>{state.value}</h1>  
         
         {/* change value  */}
-        <button onClick={()=> dispath({type:"Increase"}) } >press</button>
+        <button onClick={()=> dispath({type:"Increase"}) } >increase</button>
+        <button onClick={()=> dispath({type:"decrease"}) } >decrease</button>
 
     </div>
   )
