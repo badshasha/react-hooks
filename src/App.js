@@ -5,6 +5,7 @@ import ReduceHook from './hooks/ReduceHook';
 import UseEffect from './hooks/UseEffect';
 import UseRef from './hooks/UseRef';
 import UseImperative from './hooks/UseImperative';
+import UseContext from './hooks/UseContext';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
        {/* <ReduceHook/> */}
        {/* <UseEffect /> */}
        {/* <UseRef/> */}
-       <UseImperative />
+       {/* <UseImperative /> */}
+       <UseContext />
     </div>
   );
 }
