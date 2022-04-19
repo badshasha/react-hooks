@@ -3,6 +3,7 @@ import './App.css';
 import FirstHook from './hooks/FirstHook';
 import ReduceHook from './hooks/ReduceHook';
 import UseEffect from './hooks/UseEffect';
+import UseRef from './hooks/UseRef';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
        {/* <FirstHook /> */}
        {/* <ReduceHook/> */}
-       <UseEffect />
+       {/* <UseEffect /> */}
+       <UseRef/>
     </div>
   );
 }
