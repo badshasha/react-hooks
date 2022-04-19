@@ -6,6 +6,7 @@ import UseEffect from './hooks/UseEffect';
 import UseRef from './hooks/UseRef';
 import UseImperative from './hooks/UseImperative';
 import UseContext from './hooks/UseContext';
+import User from './HOC/User';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
        {/* <UseEffect /> */}
        {/* <UseRef/> */}
        {/* <UseImperative /> */}
-       <UseContext />
+       {/* <UseContext /> */}
+       <User/>
     </div>
   );
 }
