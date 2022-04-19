@@ -8,7 +8,7 @@ function UseRef() {
  const inputRef = useRef(null);
 
  const submit = () => {
-     inputRef.current.focus(); // change focus based on click
+     inputRef.current.value = "";
  }
 
 
