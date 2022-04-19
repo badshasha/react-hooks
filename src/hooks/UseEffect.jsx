@@ -1,13 +1,21 @@
-import React , {useEffect } from 'react'
+import React , {useEffect , useState } from 'react'
 
 function UseEffect() {
 
+ const [value , setValue] = useState(false);
   useEffect( function() {
       console.log("use effect call ");
-  })
+  },[value])
+
+
+  const caller = () => {
+    setValue(!value);
+  }
 
   return (
-    <div>UseEffect</div>
+    <div>
+        <button onClick={caller}>press</button>
+    </div>
   )
 }
 
